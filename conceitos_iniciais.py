@@ -131,7 +131,126 @@ lista_comida = ["Pizza", "Bolo", "Chocolate"]
 
 # utilizando a função choice() da biblioteca random para escolher um termo aleatóriamente na lista. 
 
-almoco = random.choice(lista_comida)
+# almoco = random.choice(lista_comida)
 
-print(almoco)
+# print(almoco)
 
+
+# Argumentos 
+# Os argumentos são informações que as funções podem receber e utilizar em seu interior.
+# nas funções def, que são criadas utilizando a palavra chave def, os argumentos, também chamados parâmetros 
+# no algoritmo da função, são indicados quando utilizamos a função no interior de parênteses.  
+
+
+# Exemplo: 
+
+def saudacao(tipo_saudacao):
+
+    return tipo_saudacao 
+
+print(saudacao("Olá!"))
+
+
+def saudacao_nome(tipo_saudacao, nome):
+
+    return str(tipo_saudacao) + " " + str(nome)
+
+
+saudacao_a = saudacao_nome("Bom dia!", "Pedro")
+
+# print(saudacao_a)
+
+
+
+# Estruturas de condicionais. 
+
+# As estruturas de condicionais são estruturas que nós utilizamos 
+# para executar ou não um bloco de código caso uma condição seja cumprida. 
+
+# if, utilizamos o if para verificarmos se uma codição está sendo cumprida, 
+# caso esta condição estaja sendo cumprida nós executamos um bloco de código específicado. 
+
+# Ex:
+
+def verificando_clima(): 
+
+    chuva = True
+
+    if chuva == True: 
+        print("Está chovendo!")
+
+
+# else, nós utilizamos o else para verificarmos se ao menos uma das condições anteriores ocorreram 
+# caso nenhuma das condições anteriores tenha sido cumprida será executada a instrução definida no 
+# else. 
+
+
+def verificando_temperatura():
+
+    temperatura = 15
+    if temperatura >= 20:
+        print("Está calor!")
+
+
+    else: 
+        print("Está Frio!")
+
+
+# elif, a palavra-chave se traduz em algo que verifica se a condição anterior foi cumprida 
+# caso contrário, a condição elif é testada, se não a próxima condição elif é testada e assim 
+# sucessivamente. A condição if têm origem da junção da palavra-chave if com a palavra-chave else. 
+
+# Ex. 
+
+def verificando_numero(numero):
+
+
+    if numero < 3: 
+
+        print("Este número é menor que três!")
+
+    elif numero < 5:
+
+        print("Este número é menor que cinco!")
+
+    elif numero < 7: 
+
+        print("Este número é menor que sete.")
+
+    else: 
+
+        print("Este número é maior ou igual a sete!")
+
+
+# verificando_numero(6)
+
+a = 1 # Neste caso o igual se trata de um operador de atribuição. 
+
+a == 2 # Neste caso se verifica se o valor de a é igual ao valor de b. 
+
+
+
+# Operadores de comparação: 
+
+# >= maior ou igual 
+# <= menor ou igual 
+# == igual 
+# != não igual  
+
+
+# Concatenação 
+# Concatenar se trata de imprimir strings com números ou com variáveis. 
+# Strings se concaetem apenas com strings. 
+
+# Algumas formas de concatenação 
+
+# com o sinal de mais:
+# idade = 10 
+# print("A idade dele é: " + str(idade) + " " + "anos.")
+
+# # com vírgula: 
+# print("A idade dele é:", idade, "anos.")
+
+# # f - string 
+
+# print(f"A idade dele é: {idade} anos.")
