@@ -1,4 +1,4 @@
-
+import time
 # Variável 
 # Uma variável é como um espaço alocado na memória que pode armazenar qualquer tipo 
 # de dados, desde um int (inteiro) até um bool, valor boleano, valor lógico (True ou False) ou string, uma cadeia 
@@ -254,3 +254,32 @@ a == 2 # Neste caso se verifica se o valor de a é igual ao valor de b.
 # # f - string 
 
 # print(f"A idade dele é: {idade} anos.")
+
+
+# Estruturas de condicionais. 
+# Em estruturas de condicionais, nós também podemos verificar o acontecimento de mais de 
+# uma condição. 
+
+def verificar_produto():
+
+    peso = int(input("Indique o peso da carga (em kg): "))
+    altura = int(input("Indique a altura da carga (em metros): "))
+
+    if peso <= 50 and altura <= 3:
+
+        print("Acesso Permitido")
+
+    else:
+
+        if peso > 50:
+            print("Acesso negado!")
+
+            time.sleep(2)
+            print("O peso excedeu o limite permitido!")
+
+        if altura > 3:
+
+            print("A altura excedeu o limite permite!")
+
+
+verificar_produto()
