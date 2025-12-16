@@ -50,3 +50,42 @@ def verificar_nome():
 
 # nome = "José"
 #     print(nome)
+
+# Veirificando o tipo de dados 
+
+tipo = type(comentario)
+print(tipo)
+
+# Verificando se é um tipo de dados específico. 
+
+print(type(comentario) == str)
+print(type(comentario) == int)
+print(type(comentario) == float)
+
+
+# Verificando se a variável comentário é um objeto de uma determinda classe. 
+
+print(isinstance(comentario, str))
+
+
+# int() 
+# Inteiros. 
+
+idade = 10 
+print(type(idade))
+print(isinstance(idade, int))
+
+
+# Podemos modificar um tipo de dados para outro tipo de dados. 
+
+# passando um inteiro para float()
+numero = float(2)
+print(type(numero))
+
+
+# Passando um inteiro para string. 
+numero_a = "20"
+print(type(numero_a))
+
+idade_a = int("20")
+print(isinstance(idade_a, int))
