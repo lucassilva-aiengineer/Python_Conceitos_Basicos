@@ -46,3 +46,43 @@ print(lista_1)
 print(lista_1[2])
 
 
+# Fatiamento, imprimindo seções da lista. 
+
+parte_a = lista_1[1:4] # Imprimindo do item de índice 1 até ao índice 4 - 1. 
+print(parte_a)
+
+
+lista_a = lista_1[:1] # Imprimindo a partir do índice 0
+print(lista_a)
+
+
+tamanho_lista = len(lista_1)
+print(tamanho_lista)
+
+# append()
+# O método append(), é uma função utilizada para adicionar elementos nas listas. 
+
+lista_1.append("Ele gosta de chocolate.")
+print(lista_1)
+
+# extend()
+# O método extend() é uma outra forma de adicionarmos elementos a lista, uma forma de juntarmos os elementos 
+# de uma lista aos elementos de outra lista. 
+
+# Juntando uma lista a outra. 
+lista_b = ["Azul", True, None, 1, 0.100, "A"]
+lista_1.extend(lista_b)
+
+print(lista_1)
+
+# Utilizador o operador += . 
+# Nós também podemos utilizar o operador de mais igual para acrecentar partes de lista a uma outra lista, para juntarmos listas, 
+# de uma forma parecida com o método extend. 
+
+lista_1 += ["novo_texto", True, {}, (0, 1)] # É o mesmo que dizer esta lista anterior mais esta outra lista aqui, lista_a = lista_a + lista_2
+print(lista_1)
+
+
+# remove(), Nós utilizamos o método remove() para remover elementos da lista. 
+
+

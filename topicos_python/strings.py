@@ -105,3 +105,62 @@ print(nova_frase_1)
 
 texto_2 = "O garoto gosta de correr"
 print(texto_2.find("gosta"))
+
+
+# Os métodos de string não alteram a string original. 
+
+nome = "JOão"
+nome_alterado = nome.title()
+
+# Ou seja o nome original não foi alterado. 
+
+print(f"Nome alterado: {nome_alterado}")
+print(f"Nome original: {nome}")
+
+print(nome.lower())
+print(nome)
+
+# A função len(), nos retorna o comprimento de nossa string ou lista, 
+# Nos retorna a quantidade de posições que a nossa estrutura de dados possui. 
+
+tamanho = len(nome)
+print(nome)
+
+# Utilizando o operador in para verificar a presença de uma parte de string em uma string maior 
+print("Jo" in nome)
+
+# Escaping caracter
+print("\"A terra é azul\" - Autor da frase")
+
+
+nome = "'Lucas'"
+
+print(nome)
+
+
+print("Hoje o sol \n está brilhando")
+
+# A barra invertida omite a segunda.
+print("A criança gosta de comer chocolate\\")
+
+
+# Fatiamento 
+# Acessando partes de strings por meio de seus índices. 
+
+nome_2 = "Mateus"
+# Em programacao contamos apartir do zero.
+print(nome_2[0])
+print(nome_2[2])
+
+# Imprimindo o último item da string. 
+print(nome_2[-1]) 
+
+# Fatiamento. 
+# Imprimindo partes da string, partindo de um índice e indo até outro índice 
+# específicado menos 1. 
+
+print(nome_2[0: 2]) # índice 2 - 1, índice 1. 
+print(nome_2[:3]) # Por padão inícia no índice 0. 
+print(nome_2[:]) # Percorre do índice zero ao final. 
+print(nome_2[2:]) # quando não específicado percorre até o último índice. 
+
