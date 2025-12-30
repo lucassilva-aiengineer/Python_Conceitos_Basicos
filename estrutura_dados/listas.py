@@ -1,5 +1,5 @@
 # Listas 
-# As listas são uma estrutura de dados em python, uma das mais utilizadas, 
+# As listas são uma estrutura de dados em python, alteráveis, uma das mais utilizadas, 
 # talvez a mais utilizada na linguagem python, elas adimitem armazenar uma quantidade 
 # indeterminada de itens, de diferentes tipos de dados, de quaisquer tipo de dados da
 # liguagem python, seja booleano, NoneType, float, números decimais, ints, números inteiros. 
