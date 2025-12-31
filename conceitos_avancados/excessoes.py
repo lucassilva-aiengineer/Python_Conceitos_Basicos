@@ -64,6 +64,8 @@ def teste():
 
 
 class PessoaNaoEncontradaException(Exception): # Herdamos da classe exceção. 
+    print("Inside")
+
     pass 
 
 
